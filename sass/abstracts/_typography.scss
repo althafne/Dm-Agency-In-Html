@@ -1,0 +1,17 @@
+.heading__title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color:$color-grey-dark-2;
+}
+
+.heading__main{
+    font-size: 3.5rem;
+    font-weight: 900;
+    color:#3b3663;
+    margin-bottom: 8rem;
+    font-family: $font-secondary;
+
+    &__span{
+        display: block;
+    }
+}

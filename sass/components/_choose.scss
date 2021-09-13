@@ -1,0 +1,149 @@
+.choose{
+
+    &__highlight::after{
+        content:"+";
+        position:absolute;
+        top:-10%;
+        right:-20%;
+        color:$orange-color;
+        font-size: 2rem;
+        font-weight: bold;
+
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width:80%;
+        margin:0 auto;
+
+        @include respond(tab-land) {
+          
+            width:90%;
+            
+            }
+
+            @include respond(tab-port) {
+            
+                flex-direction: column;
+                
+                }
+
+                
+    }
+
+    &__col1{
+        width:50%;
+        padding:0rem 2rem 0rem 0rem;
+
+        @include respond(tab-land) {
+            padding:0rem 1rem 0rem 0rem;
+            
+            }
+
+            @include respond(tab-port) {
+                padding:0rem;
+              margin-bottom: 8rem;
+              width:80%;
+                
+                }
+
+                @include respond(phone) {
+                    width:90%;
+                    padding: 0rem;
+                    
+                    }
+    }
+
+    &__col2{
+        width:45%;
+
+        @include respond(tab-port) {
+          
+            width:80%;
+            
+              
+              }
+       
+    }
+
+    &__heading__title{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color:$color-grey-dark-2;
+    }
+
+    &__heading__main{
+        font-size: 3rem;
+        font-weight: 900;
+        color:$purple-color;
+        margin-bottom: 2rem;
+        font-family: $font-secondary;
+        
+    }
+
+    &__heading__text{
+        font-size: 1.5rem;
+       margin-bottom: 2rem;
+        color:$color;
+        padding:0rem 4rem 0rem 0rem;
+        line-height: 1.5;
+
+        
+    }
+
+    &__stats{
+        
+      
+        
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        @include respond(tab-port) {
+          
+            margin-bottom: 5rem;
+            
+              
+              }
+
+        &__span{
+            font-weight: 700;
+            
+        }
+
+        &__description{
+            margin-right: 3rem;
+            color: $purple-color;
+            position: relative;
+            
+        }
+        &__span{
+            font-size: 5rem;
+        }
+
+        &__text{
+         text-align: center;
+         font-weight: 700;
+         
+
+           
+        }
+
+        &__rows{
+           
+        &__text{
+            font-size: 1.3rem;
+            border-left: 1px solid #e2e2e2;
+            padding:1rem 0rem 1rem 3rem;
+            color:$color;
+           
+            
+
+        }
+    }
+    }
+
+}

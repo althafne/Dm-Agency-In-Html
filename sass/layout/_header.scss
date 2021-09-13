@@ -1,0 +1,126 @@
+.header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem;
+    height: 15vh;
+    width: 90%;
+    margin: 0 auto;
+
+    @include respond(big-desktop) {
+      width: 60%;
+    }
+
+    @include respond(tab-land) {
+      width: 90%;
+    }
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+
+    &__image {
+      width: 15rem;
+    }
+  }
+
+  &__menu {
+    transition: 0.5s;
+
+    @include respond(tab-port) {
+      position: absolute;
+      top: 15vh;
+      left: -100%;
+      width: 100%;
+      height: 90vh;
+      background-color: #fff;
+      transition: all 0.5s ease-in-out;
+      z-index: 100;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      padding: 5rem 0rem 0rem 3rem;
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+
+    @include respond(tab-port) {
+      padding-bottom: 5rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0rem 2rem;
+    transition: all 0.3s ease;
+    color: $grey-color;
+
+    &:hover {
+      color: #141414;
+    }
+  }
+
+  &__cart {
+    font-size: 1.5rem;
+  }
+
+  &__hamburger {
+    font-size: 2rem;
+    display: none;
+    @include respond(tab-port) {
+      display: block;
+
+      &__icon {
+        color: $purple-color;
+      }
+    }
+  }
+
+  &__telephone__number {
+    text-decoration: none;
+    color: $orange-color;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $grey-color;
+
+    @include respond(tab-land) {
+      display: none;
+    }
+
+    &__span {
+      font-weight: normal;
+    }
+  }
+}
+
+.current {
+  position: relative;
+  color: $orange-color;
+  font-weight: 700;
+}
+
+.left {
+  left: 0%;
+}
+
+.scroll-header {
+  background-color: $header-fixed-bg;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

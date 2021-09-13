@@ -1,0 +1,98 @@
+.pricing{
+    width:80%;
+    margin:0 auto;
+
+    @include respond(tab-land) {
+        width:90%;
+    
+        
+        }
+
+    &__heading{
+        text-align: center;
+    }
+     &__container{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: center;
+         font-family: $font-secondary;
+
+         @include respond(tab-land) {
+        
+            justify-content: space-around;
+
+        
+            
+            }
+
+            @include respond(tab-port) {
+             
+                flex-direction: column;
+                
+                }
+
+                
+       
+     }   
+
+     &__col{
+         width:30rem;
+         height:42rem;
+         border-radius: 3rem;
+         
+         text-align: center;
+         padding:3rem 1rem;
+         color:$white-color;
+
+         @include respond(tab-land) {
+          margin-bottom: 8rem;
+
+        
+
+        
+            
+            }
+
+         &__plan{
+             font-size: 3rem;
+             margin-bottom: 1.5rem;
+             font-weight: 900;
+         }
+
+         &__price{
+             font-size: 4rem;
+             margin-bottom: 1.5rem;
+         }
+
+         &__audit, &__management,&__copywriting,&__link,&__migration{
+             font-size: 1.5rem;
+             margin-bottom: 1.8rem;
+            
+         }
+       
+
+        &__text{
+            color: $color-grey-light-2;
+            
+        }
+
+        &__orange{
+            color:$orange-color
+        }
+
+        &__bg{
+            background-color: $purple-color;
+            color:$white-color;
+    
+            &__plan{
+               color:$purple-color;
+            }
+        }
+
+       
+     }
+
+
+
+}

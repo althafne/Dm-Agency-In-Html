@@ -1,0 +1,26 @@
+.section{
+    padding:0rem 0rem 10rem 0rem;
+}
+
+
+.scroll{
+  position:fixed;
+  top:85%;
+  right: 5%;
+  display: none;
+  &__container{
+    width:5rem;
+    height:5rem;
+    border-radius: 50%;
+    background-color: $orange-color;
+    position: relative;
+  }
+
+  &__icon{
+    @include absCenter;
+    color:$white-color;
+  }
+}
+
+
+

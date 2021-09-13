@@ -1,0 +1,25 @@
+.project {
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 40rem;
+    height: 40rem;
+    z-index: -50;
+
+    @include respond(tab-port) {
+      width: 30rem;
+      height: 20rem;
+    }
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+  }
+}
